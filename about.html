@@ -10,41 +10,112 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="components.js"></script>
 </head>
 
 <body class="bg-slate-950 text-slate-100 antialiased font-sans flex flex-col min-h-screen justify-between">
 
-    <div id="navbar-component"></div>
+    <app-header></app-header>
 
     <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <span class="text-cyan-400 text-xs font-bold tracking-widest uppercase">TENTANG SAYA</span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Menciptakan Solusi Digital Terbaik</h2>
-            <p class="text-slate-400">Saya seorang profesional yang memadukan keahlian desain UI/UX dan pemrograman
-                frontend untuk membangun sistem web interaktif.</p>
-        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
 
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div class="glass-panel p-6 rounded-2xl text-center border border-slate-800">
-                <h3 class="text-4xl font-extrabold text-cyan-400 mb-1">5+</h3>
-                <p class="text-slate-400 text-sm font-medium">Tahun Pengalaman</p>
+            <!-- FOTO SEBELAH KIRI -->
+            <div class="lg:col-span-4 flex justify-center lg:sticky lg:top-28">
+                <div class="relative w-72 h-80 sm:w-80 sm:h-96 w-full">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-3xl rotate-3 blur-xl opacity-30">
+                    </div>
+                    <div
+                        class="relative w-full h-full rounded-3xl overflow-hidden border border-slate-700/80 shadow-2xl glass-panel">
+                        <img src="assets/profile.jpg" alt="Adri Wiyanto"
+                            class="w-full h-full object-cover object-center"
+                            onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800'">
+                    </div>
+                </div>
             </div>
-            <div class="glass-panel p-6 rounded-2xl text-center border border-slate-800">
-                <h3 class="text-4xl font-extrabold text-cyan-400 mb-1">40+</h3>
-                <p class="text-slate-400 text-sm font-medium">Proyek Selesai</p>
+
+            <!-- TULISAN SEBELAH KANAN -->
+            <div class="lg:col-span-8 space-y-10">
+                <!-- RINGKASAN PROFIL -->
+                <div class="space-y-4">
+                    <span class="text-cyan-400 text-xs font-bold tracking-widest uppercase">PROFIL SINGKAT</span>
+                    <h1 class="text-3xl sm:text-4xl font-extrabold text-white">Adri Wiyanto, S.Kom.</h1>
+                    <p class="text-slate-300 leading-relaxed text-base sm:text-lg">
+                        Sarjana Teknik Informatika dari Universitas Muhammadiyah Prof. Dr. HAMKA dengan IPK 3.19.
+                        Berpengalaman di bidang IT Support L2 Management Service, Data Entry, Retail Operational, dan
+                        Media Sosial. Berfokus pada pengelolaan dan sanitasi aplikasi produksi, handling issue, analisis
+                        bug website, serta pengolahan data dengan concern analisis sentimen.
+                    </p>
+                </div>
+
+                <!-- AKTIVITAS TERKINI -->
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800 space-y-3">
+                    <h2 class="text-xl font-bold text-cyan-400 flex items-center gap-2">
+                        <i class="fa-solid fa-bolt"></i> Aktivitas Terkini
+                    </h2>
+                    <ul class="list-disc list-inside text-slate-300 space-y-2 text-sm sm:text-base">
+                        <li>Bekerja sebagai <strong>IT L2 Management Service</strong> di PT Swadharma Duta Data (Nov
+                            2025 – Sekarang).</li>
+                        <li>Mengelola & memonitor sanitasi application production, handling issue, dan analisis bug
+                            website perusahaan.</li>
+                        <li>Riset Skripsi: <em>Perbandingan Analisis Sentimen Terhadap Prabowo Sebelum dan Sesudah
+                                MBG</em>.</li>
+                    </ul>
+                </div>
+
+                <!-- PENDIDIKAN -->
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-bold text-white border-b border-slate-800 pb-2">Pendidikan</h2>
+                    <div class="space-y-4">
+                        <div
+                            class="glass-panel p-5 rounded-xl border border-slate-800 flex justify-between items-start">
+                            <div>
+                                <h3 class="font-bold text-lg text-white">Universitas Muhammadiyah Prof. Dr. HAMKA</h3>
+                                <p class="text-cyan-400 text-sm">S1 Teknik Informatika (IPK 3.19/4.00)</p>
+                            </div>
+                            <span class="text-xs text-slate-400 bg-slate-800 px-3 py-1 rounded-full">2020 – 2025</span>
+                        </div>
+                        <div
+                            class="glass-panel p-5 rounded-xl border border-slate-800 flex justify-between items-start">
+                            <div>
+                                <h3 class="font-bold text-lg text-white">SMK Negeri 55 Jakarta</h3>
+                                <p class="text-cyan-400 text-sm">Teknik Kendaraan Ringan (Rata-rata Ijazah 81)</p>
+                            </div>
+                            <span class="text-xs text-slate-400 bg-slate-800 px-3 py-1 rounded-full">2015 – 2018</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SKILL & TOOLS -->
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-bold text-white border-b border-slate-800 pb-2">Kemampuan & Tools</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="glass-panel p-4 rounded-xl border border-slate-800">
+                            <h3 class="text-cyan-400 font-bold mb-2 text-sm uppercase">Programming & Database</h3>
+                            <p class="text-slate-300 text-sm">Python, HTML, CSS, JS, MySQL</p>
+                        </div>
+                        <div class="glass-panel p-4 rounded-xl border border-slate-800">
+                            <h3 class="text-cyan-400 font-bold mb-2 text-sm uppercase">App Server & Security</h3>
+                            <p class="text-slate-300 text-sm">Apache, CyberArk</p>
+                        </div>
+                        <div class="glass-panel p-4 rounded-xl border border-slate-800">
+                            <h3 class="text-cyan-400 font-bold mb-2 text-sm uppercase">Tools Management</h3>
+                            <p class="text-slate-300 text-sm">Trello, Notion, MS Teams, Whimsical, Draw.io</p>
+                        </div>
+                        <div class="glass-panel p-4 rounded-xl border border-slate-800">
+                            <h3 class="text-cyan-400 font-bold mb-2 text-sm uppercase">Soft Skills</h3>
+                            <p class="text-slate-300 text-sm">Leadership, Problem Solving, Public Speaking, Issue
+                                Management</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="glass-panel p-6 rounded-2xl text-center border border-slate-800">
-                <h3 class="text-4xl font-extrabold text-cyan-400 mb-1">25+</h3>
-                <p class="text-slate-400 text-sm font-medium">Klien Puas</p>
-            </div>
-            <div class="glass-panel p-6 rounded-2xl text-center border border-slate-800">
-                <h3 class="text-4xl font-extrabold text-cyan-400 mb-1">10+</h3>
-                <p class="text-slate-400 text-sm font-medium">Penghargaan</p>
-            </div>
+
         </div>
     </main>
 
-    <div id="footer-component"></div>
+    <app-footer></app-footer>
     <script src="main.js"></script>
 </body>
 

@@ -10,54 +10,122 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="components.js"></script>
 </head>
 
 <body class="bg-slate-950 text-slate-100 antialiased font-sans flex flex-col min-h-screen justify-between">
 
-    <div id="navbar-component"></div>
+    <app-header></app-header>
 
     <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <span class="text-cyan-400 text-xs font-bold tracking-widest uppercase">PENGALAMAN KERJA</span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Jejak Karir Profesional</h2>
+        <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+            <span class="text-cyan-400 text-xs font-bold tracking-widest uppercase">RIWAYAT KARIR</span>
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-white">Pengalaman Kerja Terstruktur</h1>
         </div>
 
-        <div class="max-w-4xl mx-auto space-y-8">
+        <div class="space-y-8 max-w-5xl mx-auto">
+
+            <!-- 1. PT SWADHARMA DUTA DATA (TERBARU) -->
             <div
-                class="glass-panel p-6 sm:p-8 rounded-2xl border border-slate-800 hover:border-cyan-500/50 transition-all">
-                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-2">
+                class="glass-panel p-6 sm:p-8 rounded-2xl border border-slate-800 hover:border-cyan-500/40 transition-all space-y-6">
+                <div
+                    class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 border-b border-slate-800 pb-4">
                     <div>
-                        <h3 class="text-xl font-bold text-white">Senior UI/UX Designer</h3>
-                        <p class="text-cyan-400 text-sm">PT Tech Digital Indonesia</p>
+                        <h2 class="text-2xl font-bold text-white">IT L2 Management Service</h2>
+                        <p class="text-cyan-400 font-semibold">PT Swadharma Duta Data – Jakarta, Indonesia</p>
                     </div>
-                    <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-full text-xs font-medium">2023 -
-                        Sekarang</span>
+                    <span
+                        class="px-4 py-1.5 bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 rounded-full text-xs font-bold">Nov
+                        2025 – Sekarang</span>
                 </div>
-                <p class="text-slate-400 text-sm leading-relaxed">
-                    Memimpin tim desain antarmuka aplikasi web dan mobile enterprise, merancang Design System
-                    interaktif, dan meningkatkan alur kepuasan pengguna.
-                </p>
+
+                <ul class="list-disc list-inside text-slate-300 space-y-2 text-sm sm:text-base">
+                    <li>Input dan update data produk ke dalam website perusahaan (500 Data/3 Minggu).</li>
+                    <li>Mensinkronisasikan data sistem sesuai dengan data fisik pada gudang perusahaan.</li>
+                    <li>Melaporkan dan mencatat sistem yang bug pada website kepada manajer untuk memaksimalkan tampilan
+                        dan kemudahan user.</li>
+                    <li>Menyusun laporan kerja dan report kepada pembimbing dan manajer.</li>
+                </ul>
+
+                <!-- RUANG GAMBAR DOKUMENTASI TERBARU -->
+                <div class="space-y-2">
+                    <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Dokumentasi Kegiatan / Project:
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div
+                            class="h-48 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center overflow-hidden group">
+                            <img src="assets/career-1.jpg" alt="Dokumentasi 1"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-all"
+                                onerror="this.parentElement.innerHTML='<div class=\'text-center text-slate-500 p-4\'><i class=\'fa-solid fa-image text-3xl mb-2\'></i><p class=\'text-xs\'>[Ruang Gambar Dokumentasi 1]</p></div>'">
+                        </div>
+                        <div
+                            class="h-48 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center overflow-hidden group">
+                            <img src="assets/career-2.jpg" alt="Dokumentasi 2"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-all"
+                                onerror="this.parentElement.innerHTML='<div class=\'text-center text-slate-500 p-4\'><i class=\'fa-solid fa-image text-3xl mb-2\'></i><p class=\'text-xs\'>[Ruang Gambar Dokumentasi 2]</p></div>'">
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div
-                class="glass-panel p-6 sm:p-8 rounded-2xl border border-slate-800 hover:border-cyan-500/50 transition-all">
-                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-2">
+            <!-- 2. PT SERIKAT KOSMETIKA PLASTINDO -->
+            <div class="glass-panel p-6 sm:p-8 rounded-2xl border border-slate-800 space-y-4">
+                <div
+                    class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 border-b border-slate-800 pb-4">
                     <div>
-                        <h3 class="text-xl font-bold text-white">Frontend Developer</h3>
-                        <p class="text-cyan-400 text-sm">Creative Studio Agency</p>
+                        <h2 class="text-xl font-bold text-white">Data Entry (Magang)</h2>
+                        <p class="text-cyan-400 font-semibold">PT Serikat Kosmetika Plastindo – Jakarta, Indonesia</p>
                     </div>
-                    <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-full text-xs font-medium">2021 -
+                    <span class="px-3 py-1 bg-slate-800 text-slate-400 rounded-full text-xs font-medium">Okt 2024 – Jan
+                        2025</span>
+                </div>
+                <ul class="list-disc list-inside text-slate-300 space-y-1.5 text-sm">
+                    <li>Input dan update data produk ke dalam website perusahaan (500 Data/3 Minggu).</li>
+                    <li>Mensinkronisasikan data sistem sesuai dengan data fisik pada gudang perusahaan.</li>
+                    <li>Melaporkan bug sistem website untuk memaksimalkan kenyamanan pengguna.</li>
+                </ul>
+            </div>
+
+            <!-- 3. LPO MUHAMMADIYAH -->
+            <div class="glass-panel p-6 sm:p-8 rounded-2xl border border-slate-800 space-y-4">
+                <div
+                    class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 border-b border-slate-800 pb-4">
+                    <div>
+                        <h2 class="text-xl font-bold text-white">Media Sosial (Magang)</h2>
+                        <p class="text-cyan-400 font-semibold">LPO Muhammadiyah – Jakarta, Indonesia</p>
+                    </div>
+                    <span class="px-3 py-1 bg-slate-800 text-slate-400 rounded-full text-xs font-medium">Agu 2023 – Okt
                         2023</span>
                 </div>
-                <p class="text-slate-400 text-sm leading-relaxed">
-                    Mengembangkan komponen aplikasi berbasis HTML, CSS, JavaScript, dan framework modern untuk berbagai
-                    produk landing page klien internasional.
-                </p>
+                <ul class="list-disc list-inside text-slate-300 space-y-1.5 text-sm">
+                    <li>Meriset kabar dan kegiatan olahraga nasional/internasional.</li>
+                    <li>Membuat template infografis media sosial Instagram dan mengolah informasi menjadi tampilan
+                        menarik.</li>
+                </ul>
             </div>
+
+            <!-- 4. PT SUMBER ALFARIA TRIJAYA, Tbk. -->
+            <div class="glass-panel p-6 sm:p-8 rounded-2xl border border-slate-800 space-y-4">
+                <div
+                    class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 border-b border-slate-800 pb-4">
+                    <div>
+                        <h2 class="text-xl font-bold text-white">ACOS (Assistant Chief of Store)</h2>
+                        <p class="text-cyan-400 font-semibold">PT Sumber Alfaria Trijaya, Tbk. – Jakarta, Indonesia</p>
+                    </div>
+                    <span class="px-3 py-1 bg-slate-800 text-slate-400 rounded-full text-xs font-medium">Feb 2019 – Feb
+                        2020</span>
+                </div>
+                <ul class="list-disc list-inside text-slate-300 space-y-1.5 text-sm">
+                    <li>Membuat strategi sales dan komunikasi hingga penjualan toko melampaui target 4 bulan berturut.
+                    </li>
+                    <li>Mengecek stok fisik dan sistem untuk pencegahan kerugian serta mengontrol kualitas produk.</li>
+                </ul>
+            </div>
+
         </div>
     </main>
 
-    <div id="footer-component"></div>
+    <app-footer></app-footer>
     <script src="main.js"></script>
 </body>
 
