@@ -30,15 +30,38 @@
                 </h1>
             </div>
 
-            <!-- 1. BEM UHAMKA (SLIDE KIRI) -->
+            <!-- 1. BEM UHAMKA (GALERI SLIDE KIRI) -->
             <div
                 class="glass-panel p-6 sm:p-8 rounded-2xl border border-slate-800 grid grid-cols-1 md:grid-cols-12 gap-6 items-center slide-in-left">
-                <div
-                    class="md:col-span-4 h-40 rounded-xl bg-slate-900 border border-slate-800 overflow-hidden flex items-center justify-center">
-                    <img src="assets/org-1.jpg" alt="BEM UHAMKA" class="w-full h-full object-cover"
-                        onerror="this.parentElement.innerHTML='<div class=\'text-center text-slate-500 p-2\'><i class=\'fa-solid fa-users text-3xl mb-1 text-cyan-400\'></i><p class=\'text-xs\'>Presiden Mahasiswa</p></div>'">
+                <div class="md:col-span-5 relative group">
+                    <div
+                        class="h-48 rounded-xl bg-slate-900 border border-slate-800 overflow-hidden flex items-center justify-center relative">
+                        <!-- Galeri Container 1 -->
+                        <div id="gallery-bem-uhamka"
+                            class="flex w-full h-full transition-transform duration-500 ease-in-out"
+                            style="transform: translateX(0%);">
+                            <div class="min-w-full h-full flex-shrink-0">
+                                <img src="assets/org-1a.jpg" alt="BEM UHAMKA 1" class="w-full h-full object-cover"
+                                    onerror="this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center h-full text-slate-500 p-2\'><i class=\'fa-solid fa-users text-3xl mb-1 text-cyan-400\'></i><p class=\'text-xs\'>BEM UHAMKA - Foto 1</p></div>'">
+                            </div>
+                            <div class="min-w-full h-full flex-shrink-0">
+                                <img src="assets/org-1b.jpg" alt="BEM UHAMKA 2" class="w-full h-full object-cover"
+                                    onerror="this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center h-full text-slate-500 p-2\'><i class=\'fa-solid fa-users text-3xl mb-1 text-cyan-400\'></i><p class=\'text-xs\'>BEM UHAMKA - Foto 2</p></div>'">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Kontrol Galeri 1 -->
+                    <div class="flex justify-between items-center mt-2 px-1">
+                        <button onclick="prevSlide('gallery-bem-uhamka', 2)"
+                            class="text-xs text-slate-400 hover:text-cyan-400 bg-slate-900 px-2.5 py-1 rounded border border-slate-800"><i
+                                class="fa-solid fa-chevron-left mr-1"></i> Prev</button>
+                        <span class="text-xs text-slate-500">Galeri Dokumentasi</span>
+                        <button onclick="nextSlide('gallery-bem-uhamka', 2)"
+                            class="text-xs text-slate-400 hover:text-cyan-400 bg-slate-900 px-2.5 py-1 rounded border border-slate-800">Next
+                            <i class="fa-solid fa-chevron-right ml-1"></i></button>
+                    </div>
                 </div>
-                <div class="md:col-span-8 space-y-3">
+                <div class="md:col-span-7 space-y-3">
                     <div
                         class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 border-b border-slate-800 pb-2">
                         <div>
@@ -57,10 +80,10 @@
                 </div>
             </div>
 
-            <!-- 2. BEM FTII UHAMKA (SLIDE KANAN) -->
+            <!-- 2. BEM FTII UHAMKA (GALERI SLIDE KANAN) -->
             <div
                 class="glass-panel p-6 sm:p-8 rounded-2xl border border-slate-800 grid grid-cols-1 md:grid-cols-12 gap-6 items-center slide-in-right">
-                <div class="md:col-span-8 space-y-3 order-2 md:order-1">
+                <div class="md:col-span-7 space-y-3 order-2 md:order-1">
                     <div
                         class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 border-b border-slate-800 pb-2">
                         <div>
@@ -77,22 +100,68 @@
                             fakultas.</li>
                     </ul>
                 </div>
-                <div
-                    class="md:col-span-4 h-40 rounded-xl bg-slate-900 border border-slate-800 overflow-hidden flex items-center justify-center order-1 md:order-2">
-                    <img src="assets/org-2.jpg" alt="BEM FTII UHAMKA" class="w-full h-full object-cover"
-                        onerror="this.parentElement.innerHTML='<div class=\'text-center text-slate-500 p-2\'><i class=\'fa-solid fa-graduation-cap text-3xl mb-1 text-blue-400\'></i><p class=\'text-xs\'>Ketua Umum BEM FTII</p></div>'">
+                <div class="md:col-span-5 relative group order-1 md:order-2">
+                    <div
+                        class="h-48 rounded-xl bg-slate-900 border border-slate-800 overflow-hidden flex items-center justify-center relative">
+                        <!-- Galeri Container 2 -->
+                        <div id="gallery-bem-ftii"
+                            class="flex w-full h-full transition-transform duration-500 ease-in-out"
+                            style="transform: translateX(0%);">
+                            <div class="min-w-full h-full flex-shrink-0">
+                                <img src="assets/org-2a.jpg" alt="BEM FTII 1" class="w-full h-full object-cover"
+                                    onerror="this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center h-full text-slate-500 p-2\'><i class=\'fa-solid fa-graduation-cap text-3xl mb-1 text-blue-400\'></i><p class=\'text-xs\'>BEM FTII - Foto 1</p></div>'">
+                            </div>
+                            <div class="min-w-full h-full flex-shrink-0">
+                                <img src="assets/org-2b.jpg" alt="BEM FTII 2" class="w-full h-full object-cover"
+                                    onerror="this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center h-full text-slate-500 p-2\'><i class=\'fa-solid fa-graduation-cap text-3xl mb-1 text-blue-400\'></i><p class=\'text-xs\'>BEM FTII - Foto 2</p></div>'">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Kontrol Galeri 2 -->
+                    <div class="flex justify-between items-center mt-2 px-1">
+                        <button onclick="prevSlide('gallery-bem-ftii', 2)"
+                            class="text-xs text-slate-400 hover:text-cyan-400 bg-slate-900 px-2.5 py-1 rounded border border-slate-800"><i
+                                class="fa-solid fa-chevron-left mr-1"></i> Prev</button>
+                        <span class="text-xs text-slate-500">Galeri Dokumentasi</span>
+                        <button onclick="nextSlide('gallery-bem-ftii', 2)"
+                            class="text-xs text-slate-400 hover:text-cyan-400 bg-slate-900 px-2.5 py-1 rounded border border-slate-800">Next
+                            <i class="fa-solid fa-chevron-right ml-1"></i></button>
+                    </div>
                 </div>
             </div>
 
-            <!-- 3. HIMA TI UHAMKA (SLIDE KIRI) -->
+            <!-- 3. HIMA TI UHAMKA (GALERI SLIDE KIRI) -->
             <div
                 class="glass-panel p-6 sm:p-8 rounded-2xl border border-slate-800 grid grid-cols-1 md:grid-cols-12 gap-6 items-center slide-in-left">
-                <div
-                    class="md:col-span-4 h-40 rounded-xl bg-slate-900 border border-slate-800 overflow-hidden flex items-center justify-center">
-                    <img src="assets/org-3.jpg" alt="HIMA TI UHAMKA" class="w-full h-full object-cover"
-                        onerror="this.parentElement.innerHTML='<div class=\'text-center text-slate-500 p-2\'><i class=\'fa-solid fa-code text-3xl mb-1 text-cyan-400\'></i><p class=\'text-xs\'>Ketua Umum HIMA TI</p></div>'">
+                <div class="md:col-span-5 relative group">
+                    <div
+                        class="h-48 rounded-xl bg-slate-900 border border-slate-800 overflow-hidden flex items-center justify-center relative">
+                        <!-- Galeri Container 3 -->
+                        <div id="gallery-hima-ti"
+                            class="flex w-full h-full transition-transform duration-500 ease-in-out"
+                            style="transform: translateX(0%);">
+                            <div class="min-w-full h-full flex-shrink-0">
+                                <img src="assets/org-3a.jpg" alt="HIMA TI 1" class="w-full h-full object-cover"
+                                    onerror="this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center h-full text-slate-500 p-2\'><i class=\'fa-solid fa-code text-3xl mb-1 text-cyan-400\'></i><p class=\'text-xs\'>HIMA TI - Foto 1</p></div>'">
+                            </div>
+                            <div class="min-w-full h-full flex-shrink-0">
+                                <img src="assets/org-3b.jpg" alt="HIMA TI 2" class="w-full h-full object-cover"
+                                    onerror="this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center h-full text-slate-500 p-2\'><i class=\'fa-solid fa-code text-3xl mb-1 text-cyan-400\'></i><p class=\'text-xs\'>HIMA TI - Foto 2</p></div>'">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Kontrol Galeri 3 -->
+                    <div class="flex justify-between items-center mt-2 px-1">
+                        <button onclick="prevSlide('gallery-hima-ti', 2)"
+                            class="text-xs text-slate-400 hover:text-cyan-400 bg-slate-900 px-2.5 py-1 rounded border border-slate-800"><i
+                                class="fa-solid fa-chevron-left mr-1"></i> Prev</button>
+                        <span class="text-xs text-slate-500">Galeri Dokumentasi</span>
+                        <button onclick="nextSlide('gallery-hima-ti', 2)"
+                            class="text-xs text-slate-400 hover:text-cyan-400 bg-slate-900 px-2.5 py-1 rounded border border-slate-800">Next
+                            <i class="fa-solid fa-chevron-right ml-1"></i></button>
+                    </div>
                 </div>
-                <div class="md:col-span-8 space-y-3">
+                <div class="md:col-span-7 space-y-3">
                     <div
                         class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 border-b border-slate-800 pb-2">
                         <div>
@@ -173,6 +242,30 @@
     </main>
 
     <app-footer></app-footer>
+    <script>
+        // State untuk galeri foto organisasi
+        const galleryIndices = {
+            'gallery-bem-uhamka': 0,
+            'gallery-bem-ftii': 0,
+            'gallery-hima-ti': 0
+        };
+
+        function nextSlide(galleryId, totalSlides) {
+            galleryIndices[galleryId] = (galleryIndices[galleryId] + 1) % totalSlides;
+            updateGallery(galleryId);
+        }
+
+        function prevSlide(galleryId, totalSlides) {
+            galleryIndices[galleryId] = (galleryIndices[galleryId] - 1 + totalSlides) % totalSlides;
+            updateGallery(galleryId);
+        }
+
+        function updateGallery(galleryId) {
+            const el = document.getElementById(galleryId);
+            const index = galleryIndices[galleryId];
+            el.style.transform = `translateX(-${index * 100}%)`;
+        }
+    </script>
     <script src="main.js"></script>
 </body>
 
