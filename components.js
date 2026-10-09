@@ -13,6 +13,11 @@ class AppHeader extends HTMLElement {
                         </span>
                     </a>
 
+                NAVBAR DENGAN POSISI TETAP KETIKA DI-SCROLL -->
+        <nav class="sticky top-0 left-0 w-full z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-20">
+                
                     <!-- DESKTOP MENU NAVBAR -->
                     <div class="hidden md:flex items-center gap-1 bg-slate-900/90 p-1.5 rounded-full border border-slate-800 shadow-inner">
                         <a href="index.html" id="nav-index" class="nav-btn px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 text-slate-300 hover:text-white hover:bg-slate-800/60">HOME</a>
@@ -20,6 +25,7 @@ class AppHeader extends HTMLElement {
                         <a href="career.html" id="nav-career" class="nav-btn px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 text-slate-300 hover:text-white hover:bg-slate-800/60">CAREER</a>
                         <a href="organization.html" id="nav-organization" class="nav-btn px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 text-slate-300 hover:text-white hover:bg-slate-800/60">ORGANIZATION</a>
                     </div>
+
 
                     <!-- WHATSAPP BUTTON -->
                     <div class="hidden md:flex items-center">
