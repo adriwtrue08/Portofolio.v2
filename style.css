@@ -1,34 +1,55 @@
-body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-}
-
-.glass-panel {
-    background: rgba(15, 23, 42, 0.6);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.text-glow {
-    background: linear-gradient(135deg, #ffffff 0%, #38bdf8 50%, #818cf8 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.typing-cursor::after {
-    content: '|';
-    animation: blink 1s infinite;
-    color: #38bdf8;
-}
-
-@keyframes blink {
-
-    0%,
-    100% {
-        opacity: 1;
-    }
-
-    50% {
+@keyframes slideInLeft {
+    from {
         opacity: 0;
+        transform: translateX(-40px);
     }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-in-left {
+    animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.slide-in-right {
+    animation: slideInRight 0.8s ease-out forwards;
+}
+
+/* Scrollbar di sisi kiri khusus tabel buku */
+.custom-scrollbar-left {
+    direction: rtl;
+}
+
+.custom-scrollbar-left table {
+    direction: ltr;
+}
+
+.custom-scrollbar-left::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.custom-scrollbar-left::-webkit-scrollbar-track {
+    background: rgba(15, 23, 42, 0.6);
+    border-radius: 4px;
+}
+
+.custom-scrollbar-left::-webkit-scrollbar-thumb {
+    background: #06b6d4;
+    border-radius: 4px;
 }

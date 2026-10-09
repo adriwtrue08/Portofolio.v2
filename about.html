@@ -37,11 +37,14 @@
 
             <!-- TULISAN SEBELAH KANAN -->
             <div class="lg:col-span-8 space-y-10">
-                <!-- RINGKASAN PROFIL -->
-                <div class="space-y-4">
+                <!-- RINGKASAN PROFIL & DOMISILI KECIL -->
+                <div class="space-y-3">
                     <span class="text-cyan-400 text-xs font-bold tracking-widest uppercase">PROFIL SINGKAT</span>
                     <h1 class="text-3xl sm:text-4xl font-extrabold text-white">Adri Wiyanto, S.Kom.</h1>
-                    <p class="text-slate-300 leading-relaxed text-base sm:text-lg">
+                    <p class="text-slate-400 text-xs sm:text-sm font-medium tracking-wide flex items-center gap-1.5">
+                        <i class="fa-solid fa-location-dot text-cyan-400"></i> Jakarta, Indonesia
+                    </p>
+                    <p class="text-slate-300 leading-relaxed text-base sm:text-lg pt-2">
                         Sarjana Teknik Informatika dari Universitas Muhammadiyah Prof. Dr. HAMKA dengan IPK 3.19.
                         Berpengalaman di bidang IT Support L2 Management Service, Data Entry, Retail Operational, dan
                         Media Sosial. Berfokus pada pengelolaan dan sanitasi aplikasi produksi, handling issue, analisis
@@ -49,19 +52,57 @@
                     </p>
                 </div>
 
-                <!-- AKTIVITAS TERKINI -->
-                <div class="glass-panel p-6 rounded-2xl border border-slate-800 space-y-3">
-                    <h2 class="text-xl font-bold text-cyan-400 flex items-center gap-2">
-                        <i class="fa-solid fa-bolt"></i> Aktivitas Terkini
-                    </h2>
-                    <ul class="list-disc list-inside text-slate-300 space-y-2 text-sm sm:text-base">
-                        <li>Bekerja sebagai <strong>IT L2 Management Service</strong> di PT Swadharma Duta Data (Nov
-                            2025 – Sekarang).</li>
-                        <li>Mengelola & memonitor sanitasi application production, handling issue, dan analisis bug
-                            website perusahaan.</li>
-                        <li>Riset Skripsi: <em>Perbandingan Analisis Sentimen Terhadap Prabowo Sebelum dan Sesudah
-                                MBG</em>.</li>
-                    </ul>
+                <!-- LIFE UPDATE (NETFLIX STYLE HORIZONTAL SLIDER) -->
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-xl font-bold text-cyan-400 flex items-center gap-2">
+                            <i class="fa-solid fa-clapperboard"></i> Life Update
+                        </h2>
+                        <div class="flex gap-2">
+                            <button onclick="slideNetflix(-1)"
+                                class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 text-white flex items-center justify-center hover:bg-cyan-500 hover:text-slate-950 transition-all"><i
+                                    class="fa-solid fa-chevron-left"></i></button>
+                            <button onclick="slideNetflix(1)"
+                                class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 text-white flex items-center justify-center hover:bg-cyan-500 hover:text-slate-950 transition-all"><i
+                                    class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+
+                    <div id="netflix-slider"
+                        class="flex gap-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory py-2 pb-4 focus:outline-none"
+                        style="scroll-behavior: smooth;">
+                        <!-- KARTU 1 -->
+                        <div
+                            class="min-w-[300px] sm:min-w-[360px] snap-start glass-panel p-6 rounded-2xl border border-slate-800 space-y-3 bg-gradient-to-br from-slate-900/90 to-slate-950/90 shadow-xl hover:border-cyan-500/40 transition-all">
+                            <span
+                                class="text-xs font-bold px-3 py-1 bg-cyan-500/10 text-cyan-400 rounded-full border border-cyan-500/20">Fokus
+                                Utama</span>
+                            <h3 class="text-lg font-bold text-white">IT L2 Management Service</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">Menjalankan operasional sistem, manajemen
+                                sanitasi aplikasi produksi, serta menangani issue bug di PT Swadharma Duta Data.</p>
+                        </div>
+                        <!-- KARTU 2 -->
+                        <div
+                            class="min-w-[300px] sm:min-w-[360px] snap-start glass-panel p-6 rounded-2xl border border-slate-800 space-y-3 bg-gradient-to-br from-slate-900/90 to-slate-950/90 shadow-xl hover:border-cyan-500/40 transition-all">
+                            <span
+                                class="text-xs font-bold px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full border border-blue-500/20">Akademik
+                                & Riset</span>
+                            <h3 class="text-lg font-bold text-white">Finalisasi Skripsi & Analisis</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">Menyelesaikan studi Teknik Informatika
+                                dengan riset perbandingan analisis sentimen terhadap Prabowo sebelum dan sesudah MBG.
+                            </p>
+                        </div>
+                        <!-- KARTU 3 -->
+                        <div
+                            class="min-w-[300px] sm:min-w-[360px] snap-start glass-panel p-6 rounded-2xl border border-slate-800 space-y-3 bg-gradient-to-br from-slate-900/90 to-slate-950/90 shadow-xl hover:border-cyan-500/40 transition-all">
+                            <span
+                                class="text-xs font-bold px-3 py-1 bg-emerald-500/10 text-emerald-400 rounded-full border border-emerald-500/20">Pengembangan
+                                Diri</span>
+                            <h3 class="text-lg font-bold text-white">Eksplorasi Web & Teknologi</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">Terus memperdalam keterampilan pemrograman
+                                modern (Python, JavaScript, Tailwind CSS) dan manajemen basis data relasional.</p>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- PENDIDIKAN -->
@@ -116,6 +157,13 @@
     </main>
 
     <app-footer></app-footer>
+    <script>
+        function slideNetflix(direction) {
+            const container = document.getElementById('netflix-slider');
+            const scrollAmount = 350 * direction;
+            container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
+    </script>
     <script src="main.js"></script>
 </body>
 

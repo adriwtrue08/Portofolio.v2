@@ -87,16 +87,29 @@ class AppFooter extends HTMLElement {
         this.innerHTML = `
         <footer class="border-t border-slate-800/80 bg-slate-950 py-10 relative z-10 mt-auto">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-                <!-- BARISAN MENU NAVBAR DI BAGIAN ATAS FOOTER -->
-                <div class="flex flex-wrap justify-center gap-6 text-sm font-semibold text-slate-400">
-                    <a href="index.html" class="hover:text-cyan-400 transition-colors">HOME</a>
-                    <a href="about.html" class="hover:text-cyan-400 transition-colors">ABOUT</a>
-                    <a href="career.html" class="hover:text-cyan-400 transition-colors">CAREER</a>
-                    <a href="organization.html" class="hover:text-cyan-400 transition-colors">ORGANIZATION</a>
+                <!-- TOMBOL SOSIAL MEDIA NAVBAR FOOTER -->
+                <div class="flex flex-wrap justify-center items-center gap-4">
+                    <a href="https://www.linkedin.com/in/adriwiyanto" target="_blank" class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900 border border-slate-800 hover:border-cyan-500/50 text-slate-300 hover:text-cyan-400 transition-all shadow-sm hover:scale-105 text-sm font-semibold">
+                        <i class="fa-brands fa-linkedin text-lg text-cyan-400"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900 border border-slate-800 hover:border-pink-500/50 text-slate-300 hover:text-pink-400 transition-all shadow-sm hover:scale-105 text-sm font-semibold">
+                        <i class="fa-brands fa-instagram text-lg text-pink-400"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://tiktok.com" target="_blank" class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900 border border-slate-800 hover:border-slate-500 text-slate-300 hover:text-white transition-all shadow-sm hover:scale-105 text-sm font-semibold">
+                        <i class="fa-brands fa-tiktok text-lg text-white"></i>
+                        <span>TikTok</span>
+                    </a>
+                    <a href="https://github.com/adriwtrue08" target="_blank" class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900 border border-slate-800 hover:border-cyan-500/50 text-slate-300 hover:text-cyan-400 transition-all shadow-sm hover:scale-105 text-sm font-semibold">
+                        <i class="fa-brands fa-github text-lg text-cyan-400"></i>
+                        <span>GitHub</span>
+                    </a>
                 </div>
+
                 <div class="border-t border-slate-800/60 max-w-md mx-auto pt-6">
                     <p class="text-slate-400 text-sm font-medium">
-                        © 2026 <span class="text-cyan-400 font-semibold">ADRI WIYANTO</span> • Portofolio
+                        <span class="text-cyan-400 font-semibold">ADRI WIYANTO</span> • Portofolio
                     </p>
                 </div>
             </div>
