@@ -99,9 +99,9 @@ class AppFooter extends HTMLElement {
                         <i class="fa-brands fa-instagram text-lg text-pink-400"></i>
                         <span>Instagram</span>
                     </a>
-                    <a href="https://tiktok.com" target="_blank" class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900 border border-slate-800 hover:border-slate-500 text-slate-300 hover:text-white transition-all shadow-sm hover:scale-105 text-sm font-semibold">
-                        <i class="fa-brands fa-tiktok text-lg text-white"></i>
-                        <span>TikTok</span>
+                    <a href="mailto:adriwiyanto08@gmail.com?subject=Halo%20Adri%20Wiyanto,%20saya%20tertarik%20berdiskusi" class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900 border border-slate-800 hover:border-red-500/50 text-slate-300 hover:text-red-400 transition-all shadow-sm hover:scale-105 text-sm font-semibold">
+                        <i class="fa-solid fa-envelope text-lg text-red-400"></i>
+                        <span>Gmail</span>
                     </a>
                     <a href="https://github.com/adriwtrue08" target="_blank" class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900 border border-slate-800 hover:border-cyan-500/50 text-slate-300 hover:text-cyan-400 transition-all shadow-sm hover:scale-105 text-sm font-semibold">
                         <i class="fa-brands fa-github text-lg text-cyan-400"></i>
