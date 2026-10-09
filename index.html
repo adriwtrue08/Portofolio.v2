@@ -5,21 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADRI WIYANTO - Home</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <!-- Panggil components.js di bagian head -->
+    <!-- Panggil File Komponen Navbar & Footer -->
     <script src="components.js"></script>
 </head>
 
 <body class="bg-slate-950 text-slate-100 antialiased font-sans flex flex-col min-h-screen justify-between">
 
-    <!-- PANGGIL NAVBAR DENGAN TAG INI -->
+    <!-- NAVBAR AUTOMATIC -->
     <app-header></app-header>
 
-    <!-- KONTEN HOME -->
+    <!-- MAIN HERO CONTENT -->
     <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
@@ -76,7 +79,7 @@
         </div>
     </main>
 
-    <!-- PANGGIL FOOTER DENGAN TAG INI -->
+    <!-- FOOTER AUTOMATIC -->
     <app-footer></app-footer>
 
     <script src="main.js"></script>
