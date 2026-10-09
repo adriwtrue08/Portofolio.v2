@@ -53,3 +53,12 @@
     background: #06b6d4;
     border-radius: 4px;
 }
+
+/* Pastikan custom element app-header tetap menempel di atas saat di-scroll */
+app-header {
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+}
