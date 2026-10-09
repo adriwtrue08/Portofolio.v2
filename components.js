@@ -10,7 +10,7 @@ class AppHeader extends HTMLElement {
                     <!-- BRAND LOGO -->
                     <a href="index.html" class="group flex items-center gap-2">
                         <span class="text-xl font-bold tracking-tight text-white group-hover:text-cyan-400 transition-colors">
-                          <span class="text-cyan-400 text-lg font-extrabold group-hover:text-white transition-colors">Portofolio</span> <br>
+                          <span class="text-[10px] font-bold tracking-widest text-slate-400 uppercase">Portofolio</span> <br>
                             ADRI <span class="text-cyan-400 font-extrabold group-hover:text-white transition-colors">WIYANTO</span>
                         </span>
                     </a>
