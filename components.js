@@ -23,14 +23,6 @@ class AppHeader extends HTMLElement {
                         <a href="organization.html" id="nav-organization" class="nav-btn px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 text-slate-300 hover:text-white hover:bg-slate-800/60">ORGANIZATION</a>
                     </div>
 
-                    <!-- WHATSAPP BUTTON -->
-                    <div class="hidden md:flex items-center">
-                        <a href="https://wa.me/6285714244137?text=Halo%20Adri%20Wiyanto,%20saya%20tertarik%20untuk%20berdiskusi" target="_blank" class="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-medium px-5 py-2.5 rounded-full shadow-lg shadow-emerald-600/20 hover:shadow-emerald-500/40 hover:-translate-y-0.5 transition-all duration-300 text-sm">
-                            <i class="fa-brands fa-whatsapp text-lg"></i>
-                            <span>Let's Talk</span>
-                        </a>
-                    </div>
-
                     <!-- MOBILE MENU BUTTON -->
                     <div class="md:hidden flex items-center">
                         <button id="mobile-menu-btn" class="text-slate-300 hover:text-white focus:outline-none p-2">
@@ -47,10 +39,6 @@ class AppHeader extends HTMLElement {
                 <a href="about.html" id="mobile-nav-about" class="mobile-nav-btn block w-full text-left px-4 py-3 rounded-xl text-base font-medium text-slate-300 hover:bg-slate-800/60">ABOUT</a>
                 <a href="career.html" id="mobile-nav-career" class="mobile-nav-btn block w-full text-left px-4 py-3 rounded-xl text-base font-medium text-slate-300 hover:bg-slate-800/60">CAREER</a>
                 <a href="organization.html" id="mobile-nav-organization" class="mobile-nav-btn block w-full text-left px-4 py-3 rounded-xl text-base font-medium text-slate-300 hover:bg-slate-800/60">ORGANIZATION</a>
-                <a href="https://wa.me/6285714244137?text=Halo%20Adri%20Wiyanto" target="_blank" class="flex items-center justify-center gap-2 bg-emerald-600 text-white font-medium px-4 py-3 rounded-xl text-base mt-2">
-                    <i class="fa-brands fa-whatsapp text-lg"></i>
-                    <span>Let's Talk via WhatsApp</span>
-                </a>
             </div>
         </nav>
         `;
@@ -94,10 +82,6 @@ class AppFooter extends HTMLElement {
                     <a href="https://www.linkedin.com/in/adriwiyanto" target="_blank" class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900 border border-slate-800 hover:border-cyan-500/50 text-slate-300 hover:text-cyan-400 transition-all shadow-sm hover:scale-105 text-sm font-semibold">
                         <i class="fa-brands fa-linkedin text-lg text-cyan-400"></i>
                         <span>LinkedIn</span>
-                    </a>
-                    <a href="https://instagram.com" target="_blank" class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900 border border-slate-800 hover:border-pink-500/50 text-slate-300 hover:text-pink-400 transition-all shadow-sm hover:scale-105 text-sm font-semibold">
-                        <i class="fa-brands fa-instagram text-lg text-pink-400"></i>
-                        <span>Instagram</span>
                     </a>
                     <a href="mailto:adriwiyanto08@gmail.com?subject=Halo%20Adri%20Wiyanto,%20saya%20tertarik%20berdiskusi" class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900 border border-slate-800 hover:border-red-500/50 text-slate-300 hover:text-red-400 transition-all shadow-sm hover:scale-105 text-sm font-semibold">
                         <i class="fa-solid fa-envelope text-lg text-red-400"></i>
