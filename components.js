@@ -7,7 +7,7 @@ class AppHeader extends HTMLElement {
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex items-center justify-between h-20">
                     
-                    <!-- BRAND LOGO -->
+                    <!-- BRAND LOGO DI KIRI -->
                     <a href="index.html" class="group flex items-center gap-2">
                         <span class="text-xl font-bold tracking-tight text-white group-hover:text-cyan-400 transition-colors">
                           <span class="text-[10px] font-bold tracking-widest text-slate-400 uppercase">Portofolio</span> <br>
@@ -15,13 +15,16 @@ class AppHeader extends HTMLElement {
                         </span>
                     </a>
 
-                    <!-- DESKTOP MENU NAVBAR -->
+                    <!-- DESKTOP MENU NAVBAR DI TENGAH -->
                     <div class="hidden md:flex items-center gap-1 bg-slate-900/90 p-1.5 rounded-full border border-slate-800 shadow-inner">
                         <a href="index.html" id="nav-index" class="nav-btn px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 text-slate-300 hover:text-white hover:bg-slate-800/60">HOME</a>
                         <a href="about.html" id="nav-about" class="nav-btn px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 text-slate-300 hover:text-white hover:bg-slate-800/60">ABOUT</a>
                         <a href="career.html" id="nav-career" class="nav-btn px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 text-slate-300 hover:text-white hover:bg-slate-800/60">CAREER</a>
                         <a href="organization.html" id="nav-organization" class="nav-btn px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 text-slate-300 hover:text-white hover:bg-slate-800/60">ORGANIZATION</a>
                     </div>
+
+                    <!-- ELEMEN PENYEIMBANG KOSONG DI KANAN (AGAR MENU PAS DI TENGAH) -->
+                    <div class="hidden md:block w-[140px]"></div>
 
                     <!-- MOBILE MENU BUTTON -->
                     <div class="md:hidden flex items-center">
