@@ -86,7 +86,7 @@ class AppFooter extends HTMLElement {
                         <i class="fa-brands fa-linkedin text-lg text-cyan-400"></i>
                         <span>LinkedIn</span>
                     </a>
-                    <a href="mailto:adriwiyanto08@gmail.com?subject=Halo%20Adri%20Wiyanto,%20saya%20tertarik%20berdiskusi" class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900 border border-slate-800 hover:border-red-500/50 text-slate-300 hover:text-red-400 transition-all shadow-sm hover:scale-105 text-sm font-semibold">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adriwiyanto26@gmail.com&su=Undangan%20Berdiskusi&body=Hai,%20Adri..%20Bisa%20kita%20berdiskusi" target="_blank" class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900 border border-slate-800 hover:border-red-500/50 text-slate-300 hover:text-red-400 transition-all shadow-sm hover:scale-105 text-sm font-semibold">
                         <i class="fa-solid fa-envelope text-lg text-red-400"></i>
                         <span>Gmail</span>
                     </a>

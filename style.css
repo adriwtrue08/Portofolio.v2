@@ -61,4 +61,14 @@ app-header {
     top: 0;
     z-index: 50;
     width: 100%;
-}
+}
+
+/* Layout daftar skill: maksimal 5 item ke bawah per kolom, otomatis buat kolom kiri & kanan jika > 5 */
+.skill-list {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(5, auto);
+    grid-auto-columns: minmax(0, 1fr);
+    row-gap: 0.5rem;
+    column-gap: 1.5rem;
+}
